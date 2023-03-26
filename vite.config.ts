@@ -86,6 +86,18 @@ export default defineConfig({
       ],
     }),
   ],
+  build: {
+    target: 'es2018',
+    outDir: 'dist',
+    assetsDir: '.',
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        popup: './src/popup.html',
+        content: './src/content.ts',
+      },
+    },
+  },
 
   // https://github.com/vitest-dev/vitest
   test: {

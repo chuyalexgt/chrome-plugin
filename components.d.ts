@@ -7,10 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    FeatureCard: typeof import('./src/components/Home/FeatureCard.vue')['default']
-    Features: typeof import('./src/components/Home/Features.vue')['default']
-    Header: typeof import('./src/components/Header.vue')['default']
-    Hero: typeof import('./src/components/Home/Hero.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
